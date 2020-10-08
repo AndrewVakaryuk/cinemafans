@@ -1,0 +1,14 @@
+uuid: 778b0ea1-b34b-4516-9b06-baa8b3c60103
+name: 'cinema fans'
+mail: cinemafans@com.ua
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
