@@ -1,0 +1,18 @@
+uuid: 7eef5c1f-92c7-47f0-8c53-8365cce3e059
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Person
+type: persons
+description: 'Actors or directors'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: true

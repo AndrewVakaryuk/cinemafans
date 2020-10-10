@@ -1,0 +1,21 @@
+uuid: fc506a2c-51dd-454f-8345-51cb86ddface
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_name
+    - node.type.persons
+  module:
+    - text
+id: node.persons.field_name
+field_name: field_name
+entity_type: node
+bundle: persons
+label: Name
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

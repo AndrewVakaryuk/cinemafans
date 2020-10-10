@@ -1,0 +1,19 @@
+uuid: b51148fa-7e86-4386-9939-e6d0d002d1b4
+langcode: en
+status: true
+dependencies:
+  module:
+    - duration_field
+    - node
+id: node.field_runtime
+field_name: field_runtime
+entity_type: node
+type: duration
+settings: {  }
+module: duration_field
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

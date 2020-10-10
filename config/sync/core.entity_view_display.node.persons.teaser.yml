@@ -1,0 +1,28 @@
+uuid: 9a85c4d2-0ecf-4551-94e8-72b130bfe0d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.persons.field_bio
+    - field.field.node.persons.field_date_of_birth
+    - field.field.node.persons.field_name
+    - field.field.node.persons.field_photo
+    - node.type.persons
+  module:
+    - user
+id: node.persons.teaser
+targetEntityType: node
+bundle: persons
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_bio: true
+  field_date_of_birth: true
+  field_name: true
+  field_photo: true

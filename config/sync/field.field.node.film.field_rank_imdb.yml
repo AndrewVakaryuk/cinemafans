@@ -1,0 +1,23 @@
+uuid: c39bf6d3-9e01-42e7-b50b-a68036521770
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_rank_imdb
+    - node.type.film
+id: node.film.field_rank_imdb
+field_name: field_rank_imdb
+entity_type: node
+bundle: film
+label: 'Rank IMDb'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: !!float 0
+  max: !!float 10
+  prefix: ⭐
+  suffix: ''
+field_type: float

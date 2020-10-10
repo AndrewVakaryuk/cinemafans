@@ -1,0 +1,21 @@
+uuid: 8902a5bd-d6d6-4c61-bdcb-2b42bfd26872
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_bio
+    - node.type.persons
+  module:
+    - text
+id: node.persons.field_bio
+field_name: field_bio
+entity_type: node
+bundle: persons
+label: Bio
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

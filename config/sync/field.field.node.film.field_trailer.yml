@@ -1,0 +1,25 @@
+uuid: f22afd31-5e49-4ed6-98f9-95406d200194
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_trailer
+    - node.type.film
+  module:
+    - video_embed_field
+id: node.film.field_trailer
+field_name: field_trailer
+entity_type: node
+bundle: film
+label: Trailer
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_providers:
+    youtube: youtube
+    vimeo: '0'
+    youtube_playlist: '0'
+field_type: video_embed_field

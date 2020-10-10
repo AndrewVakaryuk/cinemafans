@@ -1,0 +1,29 @@
+uuid: 73367c5e-a9e4-4c53-af7c-b139158c3027
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_production
+    - node.type.film
+    - taxonomy.vocabulary.production
+id: node.film.field_production
+field_name: field_production
+entity_type: node
+bundle: film
+label: Production
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      production: production
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

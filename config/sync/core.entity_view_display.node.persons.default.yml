@@ -1,0 +1,58 @@
+uuid: e4dc66e3-4fb2-4788-97e5-e602f3120425
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.persons.field_bio
+    - field.field.node.persons.field_date_of_birth
+    - field.field.node.persons.field_name
+    - field.field.node.persons.field_photo
+    - node.type.persons
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.persons.default
+targetEntityType: node
+bundle: persons
+mode: default
+content:
+  field_bio:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_date_of_birth:
+    weight: 103
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_name:
+    weight: 102
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_photo:
+    weight: 104
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

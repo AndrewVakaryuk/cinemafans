@@ -1,0 +1,18 @@
+uuid: b8e31e1c-db73-49cf-8be9-2d635982709b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_rank_site
+field_name: field_rank_site
+entity_type: node
+type: float
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

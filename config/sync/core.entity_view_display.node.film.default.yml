@@ -1,0 +1,151 @@
+uuid: be0f8266-56b4-4d47-84af-22948302b93a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.film.field_actors
+    - field.field.node.film.field_budget_
+    - field.field.node.film.field_country
+    - field.field.node.film.field_director
+    - field.field.node.film.field_film_title
+    - field.field.node.film.field_genres
+    - field.field.node.film.field_poster
+    - field.field.node.film.field_production
+    - field.field.node.film.field_rank_imdb
+    - field.field.node.film.field_rank_site
+    - field.field.node.film.field_runtime
+    - field.field.node.film.field_trailer
+    - field.field.node.film.field_year
+    - node.type.film
+  module:
+    - duration_field
+    - image
+    - user
+    - video_embed_field
+    - yearonly
+id: node.film.default
+targetEntityType: node
+bundle: film
+mode: default
+content:
+  field_actors:
+    weight: 116
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_budget_:
+    weight: 113
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_country:
+    weight: 108
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_director:
+    weight: 115
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_film_title:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_genres:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_poster:
+    weight: 110
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_production:
+    weight: 109
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_rank_imdb:
+    weight: 111
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_rank_site:
+    weight: 112
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  field_runtime:
+    weight: 105
+    label: above
+    settings:
+      text_length: full
+      separator: space
+    third_party_settings: {  }
+    type: duration_human_display
+    region: content
+  field_trailer:
+    weight: 114
+    label: above
+    settings:
+      responsive: true
+      width: 854
+      height: 480
+      autoplay: true
+    third_party_settings: {  }
+    type: video_embed_field_video
+    region: content
+  field_year:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: yearonly_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
