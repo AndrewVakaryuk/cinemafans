@@ -1,12 +1,12 @@
-uuid: 416235f5-c614-42d7-8e04-bedd52e359e9
+uuid: 80a6f8b1-e204-4447-bc58-7635dc57c5c5
 langcode: en
 status: true
 dependencies:
   module:
-    - node
-id: node.field_runtime
-field_name: field_runtime
-entity_type: node
+    - comment
+id: comment.field_rank
+field_name: field_rank
+entity_type: comment
 type: integer
 settings:
   unsigned: false

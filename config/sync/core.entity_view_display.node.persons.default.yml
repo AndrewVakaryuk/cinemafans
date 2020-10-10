@@ -5,7 +5,6 @@ dependencies:
   config:
     - field.field.node.persons.field_bio
     - field.field.node.persons.field_date_of_birth
-    - field.field.node.persons.field_name
     - field.field.node.persons.field_photo
     - node.type.persons
   module:
@@ -33,13 +32,6 @@ content:
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
-    region: content
-  field_name:
-    weight: 102
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
     region: content
   field_photo:
     weight: 104

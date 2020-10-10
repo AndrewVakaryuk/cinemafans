@@ -1,0 +1,37 @@
+uuid: 7bceaab2-f8ac-4835-aa95-edf7595169a1
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.film_comments
+    - field.field.comment.film_comments.comment_body
+    - field.field.comment.film_comments.field_rank
+  module:
+    - text
+id: comment.film_comments.default
+targetEntityType: comment
+bundle: film_comments
+mode: default
+content:
+  comment_body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_rank:
+    weight: 101
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }

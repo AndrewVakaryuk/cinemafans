@@ -6,7 +6,6 @@ dependencies:
     - core.entity_view_mode.node.teaser
     - field.field.node.persons.field_bio
     - field.field.node.persons.field_date_of_birth
-    - field.field.node.persons.field_name
     - field.field.node.persons.field_photo
     - node.type.persons
   module:
@@ -24,5 +23,4 @@ content:
 hidden:
   field_bio: true
   field_date_of_birth: true
-  field_name: true
   field_photo: true

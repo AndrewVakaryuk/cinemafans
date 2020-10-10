@@ -1,0 +1,23 @@
+uuid: fa11f984-eebb-4b9b-85f5-50c5b5479cc8
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.film_comments
+    - field.storage.comment.field_rank
+id: comment.film_comments.field_rank
+field_name: field_rank
+entity_type: comment
+bundle: film_comments
+label: Rank
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

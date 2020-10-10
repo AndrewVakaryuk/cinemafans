@@ -7,7 +7,6 @@ dependencies:
     - field.field.node.film.field_budget_
     - field.field.node.film.field_country
     - field.field.node.film.field_director
-    - field.field.node.film.field_film_title
     - field.field.node.film.field_genres
     - field.field.node.film.field_poster
     - field.field.node.film.field_production
@@ -18,7 +17,6 @@ dependencies:
     - field.field.node.film.field_year
     - node.type.film
   module:
-    - duration_field
     - image
     - user
     - video_embed_field
@@ -60,14 +58,6 @@ content:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
-    region: content
-  field_film_title:
-    weight: 102
-    label: above
-    settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
     region: content
   field_genres:
     weight: 103
@@ -117,13 +107,13 @@ content:
     type: number_decimal
     region: content
   field_runtime:
-    weight: 105
+    weight: 117
     label: above
     settings:
-      text_length: full
-      separator: space
+      thousand_separator: ''
+      prefix_suffix: true
     third_party_settings: {  }
-    type: duration_human_display
+    type: number_integer
     region: content
   field_trailer:
     weight: 114

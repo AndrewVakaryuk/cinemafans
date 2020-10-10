@@ -1,0 +1,32 @@
+uuid: c94172de-f7e5-4b54-a559-24654f21a58f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.production.field_studio_logo
+    - taxonomy.vocabulary.production
+  module:
+    - image
+    - text
+id: taxonomy_term.production.default
+targetEntityType: taxonomy_term
+bundle: production
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_studio_logo:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

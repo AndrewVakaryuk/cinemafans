@@ -8,7 +8,6 @@ dependencies:
     - field.field.node.film.field_budget_
     - field.field.node.film.field_country
     - field.field.node.film.field_director
-    - field.field.node.film.field_film_title
     - field.field.node.film.field_genres
     - field.field.node.film.field_poster
     - field.field.node.film.field_production
@@ -35,7 +34,6 @@ hidden:
   field_budget_: true
   field_country: true
   field_director: true
-  field_film_title: true
   field_genres: true
   field_poster: true
   field_production: true
