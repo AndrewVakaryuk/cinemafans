@@ -28,10 +28,9 @@ content:
     weight: 103
     label: above
     settings:
-      format_type: medium
       timezone_override: ''
     third_party_settings: {  }
-    type: datetime_default
+    type: datetime_plain
     region: content
   field_photo:
     weight: 104
@@ -44,7 +43,7 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }

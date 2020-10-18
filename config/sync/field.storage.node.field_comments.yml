@@ -1,17 +1,17 @@
-uuid: d62694aa-a405-46aa-bd3b-5d94ca0aff12
+uuid: 025c705d-36a4-4cf0-a00f-c26000456209
 langcode: en
 status: true
 dependencies:
   module:
-    - datetime
+    - comment
     - node
-id: node.field_date_of_birth
-field_name: field_date_of_birth
+id: node.field_comments
+field_name: field_comments
 entity_type: node
-type: datetime
+type: comment
 settings:
-  datetime_type: date
-module: datetime
+  comment_type: film_comments
+module: comment
 locked: false
 cardinality: 1
 translatable: true

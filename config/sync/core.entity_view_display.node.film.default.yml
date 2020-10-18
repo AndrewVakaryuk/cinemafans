@@ -3,8 +3,10 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_display.comment.film_comments.default
     - field.field.node.film.field_actors
     - field.field.node.film.field_budget_
+    - field.field.node.film.field_comments
     - field.field.node.film.field_country
     - field.field.node.film.field_director
     - field.field.node.film.field_genres
@@ -17,6 +19,7 @@ dependencies:
     - field.field.node.film.field_year
     - node.type.film
   module:
+    - comment
     - image
     - user
     - video_embed_field
@@ -38,10 +41,19 @@ content:
     weight: 113
     label: above
     settings:
-      thousand_separator: ''
+      thousand_separator: ' '
       prefix_suffix: true
     third_party_settings: {  }
     type: number_integer
+    region: content
+  field_comments:
+    weight: 118
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
     region: content
   field_country:
     weight: 108
@@ -135,7 +147,7 @@ content:
     region: content
   links:
     weight: 100
+    region: content
     settings: {  }
     third_party_settings: {  }
-    region: content
 hidden: {  }
